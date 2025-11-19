@@ -1,11 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio | Tech4Ever</title>
+
+  <!-- TIPOGRAFÍAS -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
 </head>
+
 <body>
-    <h1>Hola</h1>
+
+<!-- HEADER -->
+<header>
+  <div class="nav-container">
+    <div class="logo">
+      <span class="tech">Tech</span><span class="four">4</span><span class="ever">Ever</span>
+    </div>
+    <div class="nav-links">
+      <a class="btn-outline btn" href="alcance.html">Alcance</a>
+      <a class="btn-outline btn" href="voluntariado.html">Voluntariado</a>
+      <a class="btn-primary btn" href="apoyanos.html">¡Apóyanos!</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO + CARRUSEL -->
+<section class="hero">
+
+  <!-- SLIDES -->
+  <div class="hero-slide active" style="background-image:url('../assets/image/imagen.jpg');"></div>
+  <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475');"></div>
+  <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1551434678-e076c223a692');"></div>
+
+  <!-- CONTENT -->
+  <div class="hero-content">
+    <h1>Innovación con propósito</h1>
+    <p>Formamos a jóvenes en habilidades digitales para construir un futuro con mejores oportunidades.</p>
+
+    <div class="cta-row">
+      <a href="apoyanos.html" class="btn-primary btn">¡Quiero ayudar!</a>
+      <a href="voluntariado.html" class="btn-outline btn">Ser voluntario/a</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- SECCIÓN: QUÉ HACEMOS -->
+<section class="section">
+  <h2>Qué hacemos</h2>
+  <div class="grid">
+    <div class="card"><h3>Talleres de programación</h3><p>Clases accesibles de HTML, CSS, JavaScript y más.</p></div>
+    <div class="card"><h3>Robótica educativa</h3><p>Clubes escolares con kits de robótica para aprender haciendo.</p></div>
+    <div class="card"><h3>Becas tecnológicas</h3><p>Equipos, conectividad y espacios de estudio.</p></div>
+    <div class="card"><h3>Mentorías</h3><p>Acompañamiento personalizado con profesionales IT.</p></div>
+  </div>
+</section>
+
+<!-- SECCIÓN: IMPACTO -->
+<section class="section">
+  <h2>Impacto real</h2>
+  <div class="grid">
+    <div class="card"><h3>+250 jóvenes</h3><p>formados en habilidades digitales.</p></div>
+    <div class="card"><h3>+40 escuelas</h3><p>alcanzadas con programas educativos.</p></div>
+    <div class="card"><h3>+1200 horas</h3><p>de capacitación brindada.</p></div>
+    <div class="card"><h3>+85 equipos</h3><p>entregados a estudiantes.</p></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><span class="tech">Tech</span><span class="four">4</span><span class="ever">Ever</span></div>
+        <p>Educación tecnológica con propósito.</p>
+      </div>
+      <ul class="foot-list">
+        <li><strong>Mail:</strong> contacto@tech4ever.org</li>
+        <li><strong>Tel:</strong> +54 11 5555-1234</li>
+        <li><strong>Ubicación:</strong> CABA, Argentina</li>
+        <li><strong>Redes:</strong> Instagram @tech4ever · LinkedIn /tech4ever</li>
+      </ul>
+    </div>
+    <div class="copy">© 2025 Tech4Ever — Todos los derechos reservados.</div>
+  </div>
+</footer>
+
+<!-- JS DEL CARRUSEL -->
+<script>
+  let slides = document.querySelectorAll('.hero-slide');
+  let index = 0;
+
+  setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+  }, 5000);
+</script>
+
 </body>
 </html>
