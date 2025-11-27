@@ -231,7 +231,7 @@ footer {
 
 
 /* ================================
-   APP IMPACTO MINIMALISTA
+   DONACION
 ==================================*/
 
 .hero-donation{
@@ -297,6 +297,41 @@ footer {
     color:var(--accent);
     font-weight:700;
     font-size:1.6rem;
+}
+
+.donar-btn {
+    margin-top: 28px;
+    justify-content: center;
+    width: 100%;
+    max-width: 420px;
+}
+
+.donation-success {
+    display: none;
+    text-align: center;
+    margin-top: 40px;
+    max-width: 600px;
+
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 28px;
+    border-radius: 14px;
+    margin: 100px auto;
+}
+
+.donation-success h2 {
+    font-family: Poppins;
+    margin-bottom: 12px;
+}
+
+.donation-success p {
+    color: var(--muted);
+    margin-bottom: 22px;
+}
+
+.volver-btn {
+    justify-content: center;
+    width: 100%;
 }
 
 
