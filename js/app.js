@@ -55,3 +55,31 @@ if (document.getElementById("confirmarDonacion")) {
       msgGracias.style.display = "block";
    });
 };
+
+/* Menu hamburger */
+
+console.log("hola")
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+const menuOverlay = document.getElementById("menuOverlay");
+
+if (hamburger) {
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("active");
+        menuOverlay.classList.toggle("active");
+    });
+    menuOverlay.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navLinks.classList.remove("active");
+        menuOverlay.classList.remove("active");
+    });
+    document.querySelectorAll("#navLinks a").forEach(a=>{
+        a.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navLinks.classList.remove("active");
+            menuOverlay.classList.remove("active");
+        });
+    });
+};
