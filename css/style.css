@@ -408,3 +408,46 @@ footer {
     justify-content: center;
     width: 100%;
 }
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.faq-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 20px;
+    border-radius: 14px;
+}
+
+.faq-item h3 {
+    font-family: Poppins;
+    margin-bottom: 6px;
+}
+
+.footer-faq {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 10px;
+
+    /* Color llamativo pero elegante */
+    background: linear-gradient(90deg, var(--accent), #7a2cff);
+
+    /* Texto */
+    color: white !important;
+    font-weight: 600;
+    font-size: 0.95rem;
+
+    /* Borde + estilo limpio */
+    border: 1px solid rgba(255,255,255,0.1);
+
+    /* Animación suave */
+    transition: 0.2s ease;
+}
+
+.footer-faq:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
